@@ -9,7 +9,7 @@ export default function HomePage() {
         {
           <div className="row">
             {cities.map(city => (
-              <div key={city.id} className='col-6'>
+              <div key={city.id}>
                 <Card
                   name={city.name}
                   description={city.description}
