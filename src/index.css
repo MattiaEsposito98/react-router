@@ -5,8 +5,7 @@
   box-sizing: border-box;
 }
 
-
-
+/*  */
 .nav {
   padding: 50px;
 
@@ -43,5 +42,13 @@
   gap: 1.5rem;
   justify-content: center;
   align-items: center;
+}
 
+.blank-layout {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
 }

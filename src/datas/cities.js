@@ -2,7 +2,8 @@ const cities = [
   {
     id: 1,
     name: "Roma",
-    description: "La capitale d'Italia, famosa per il Colosseo, il Vaticano e la sua storia millenaria."
+    description: "La capitale d'Italia, famosa per il Colosseo, il Vaticano e la sua storia millenaria.",
+
   },
   {
     id: 2,
