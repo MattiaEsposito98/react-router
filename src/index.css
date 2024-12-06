@@ -1,0 +1,25 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.nav {
+  padding: 50px;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    gap: 1rem;
+  }
+}
+
+.active {
+  color: green;
+}
