@@ -7,6 +7,7 @@ import DefaultLayout from './layouts/DefaultLayout'
 import NotFound from './pages/NotFound'
 import BlankLayout from './layouts/BlankLayout'
 import Index from './pages/posts/Index'
+import Show from "./pages/posts/Show"
 
 
 function App() {

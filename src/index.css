@@ -51,7 +51,7 @@ a:hover {
 .container {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 0 2rem;
+
 }
 
 .row {
@@ -96,4 +96,24 @@ a:hover {
 
 .link-homepage {
   font-size: 30px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container-id {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-show {
+  background-color: cadetblue;
+  padding: 12px;
+  border-radius: 12%;
+  margin-left: 2rem;
+  margin-top: 1rem;
 }
