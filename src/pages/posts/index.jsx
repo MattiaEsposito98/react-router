@@ -27,7 +27,10 @@ export default function Index() {
       <section>
         <div className='container'>
           <h1 className='title'>I Posts</h1>
-          {/* <Link className='link' to="/posts/create">Nuovo post</Link> */}
+          <button className='link-create'>
+            <Link to="/posts/create">Nuovo post</Link>
+          </button>
+
         </div>
         <div className="container">
           <div className="row">
@@ -37,7 +40,7 @@ export default function Index() {
                   <li key={post.id}>
                     <Card
                       title={post.title}
-                      tags={post.tags}
+                      tags={post.tag}
                       image={post.image}
                       content={post.content}
                       published={post.published}

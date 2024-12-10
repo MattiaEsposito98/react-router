@@ -41,7 +41,7 @@ a:hover {
   color: green;
 }
 
-.nameCity {
+.namePost {
   margin: 1rem 2rem;
   display: flex;
   flex-direction: column;
@@ -116,4 +116,35 @@ button {
   border-radius: 12%;
   margin-left: 2rem;
   margin-top: 1rem;
+}
+
+input:not([type='checkbox'], [type='radio']) {
+  height: 2rem;
+  border: 1px solid #740e0e99;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.form-group-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+input[type='checkbox'] {
+  height: 2rem;
+  margin: 0.5rem 0;
+}
+
+form button {
+  margin: 1rem 0;
+}
+
+.link-create {
+  background-color: cadetblue;
+  padding: 12px;
+  margin-left: 2rem;
+  margin: 1rem;
 }

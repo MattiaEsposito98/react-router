@@ -8,6 +8,7 @@ import NotFound from './pages/NotFound'
 import BlankLayout from './layouts/BlankLayout'
 import Index from './pages/posts/Index'
 import Show from "./pages/posts/Show"
+import Create from './pages/posts/Create'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path='posts'>
             <Route index Component={Index} />
             <Route path=':id' Component={Show} />
+            <Route path='create' Component={Create} />
           </Route>
         </Route>
         <Route Component={BlankLayout}>
