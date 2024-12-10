@@ -1,5 +1,4 @@
 import Card from '../components/Cards'
-import cities from '../datas/cities'
 export default function HomePage() {
 
   return (
@@ -8,15 +7,15 @@ export default function HomePage() {
       <div className='container'>
         {
           <div className="row">
-            {cities.map(city => (
-              <div key={city.id}>
+            {/* {posts.map(post => (
+              <div key={post.id}>
                 <Card
-                  name={city.name}
-                  description={city.description}
+                  name={post.title}
+                  content={post.content}
                 />
               </div>
             ))
-            }
+            } */}
           </div>
         }
       </div>

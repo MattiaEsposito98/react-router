@@ -17,6 +17,11 @@
     list-style: none;
     gap: 1rem;
   }
+
+}
+
+a:hover {
+  color: chartreuse;
 }
 
 .active {
