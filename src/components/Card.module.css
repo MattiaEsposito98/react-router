@@ -1,6 +1,16 @@
-.card {
+/* .card {
   border-radius: 0.5rem;
   background-color: white;
+  height: 700px
+} */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .image {

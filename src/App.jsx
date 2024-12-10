@@ -19,7 +19,7 @@ function App() {
           <Route path="/list" Component={List} />
           <Route path='posts'>
             <Route index Component={Index} />
-            {/*<Route path=':id' Component={} />*/}
+            <Route path=':id' Component={Show} />
           </Route>
         </Route>
         <Route Component={BlankLayout}>

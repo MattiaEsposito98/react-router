@@ -74,6 +74,7 @@ a:hover {
 .grid {
   display: grid;
   gap: 2rem;
+
 }
 
 .grid.grid-cols-2 {
@@ -84,4 +85,15 @@ a:hover {
   text-align: center;
   margin: 2rem;
   font-size: 40px;
+}
+
+.title-homepage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5rem;
+}
+
+.link-homepage {
+  font-size: 30px;
 }
