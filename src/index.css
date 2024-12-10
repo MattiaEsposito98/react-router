@@ -5,6 +5,19 @@
   box-sizing: border-box;
 }
 
+ul,
+ol {
+  list-style: none
+}
+
+body {
+  margin: 0;
+  /* display: flex; */
+  /* place-items: center; */
+  min-width: 320px;
+  min-height: 100vh;
+}
+
 /*  */
 .nav {
   padding: 50px;
@@ -36,9 +49,9 @@ a:hover {
 }
 
 .container {
-  width: 100%;
-  padding: 0 1.5rem;
-  margin: 2rem auto;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .row {
@@ -56,4 +69,19 @@ a:hover {
   justify-content: center;
   align-items: center;
   background-color: bisque;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.title {
+  text-align: center;
+  margin: 2rem;
+  font-size: 40px;
 }

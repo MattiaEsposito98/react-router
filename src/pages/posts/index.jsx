@@ -11,7 +11,7 @@ export default function Index() {
   function fetchPosts() {
     axios.get(`${BASE_URI}/posts`)
       .then(res => {
-        setPosts(res.data)
+        setPosts(res.data.results)
       })
       .catch(err => {
         console.err(err)
@@ -30,14 +30,22 @@ export default function Index() {
           {/* <Link className='link' to="/posts/create">Nuovo post</Link> */}
         </div>
         <div className="container">
-          <ul className='grid grid-cols-2'>
-            {posts.map(post => (
-              <li key={post.id}>
-                {/* <Card onDelete={() => fetchPizzas()} post={post} /> */}
-                <Card />
-              </li>
-            ))}
-          </ul>
+          <div className="row">
+            <ul className='grid grid-cols-2'>
+              {posts.map(post => (
+                <li key={post.id}>
+                  <Card
+                    title={post.title}
+                    tags={post.tags}
+                    image={post.image}
+                    content={post.content}
+                    published={post.published}
+                  />
+                </li>
+              ))}
+            </ul>
+          </div>
+
         </div>
       </section>
     </main>
