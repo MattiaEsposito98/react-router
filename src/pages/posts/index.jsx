@@ -14,7 +14,7 @@ export default function Index() {
         setPosts(res.data.results)
       })
       .catch(err => {
-        console.err(err)
+        console.error(err)
       })
   }
 
@@ -32,17 +32,18 @@ export default function Index() {
         <div className="container">
           <div className="row">
             <ul className='grid grid-cols-2'>
-              {posts.map(post => (
-                <li key={post.id}>
-                  <Card
-                    title={post.title}
-                    tags={post.tags}
-                    image={post.image}
-                    content={post.content}
-                    published={post.published}
-                  />
-                </li>
-              ))}
+              {posts.filter(post => post.published)
+                .map(post => (
+                  <li key={post.id}>
+                    <Card
+                      title={post.title}
+                      tags={post.tags}
+                      image={post.image}
+                      content={post.content}
+                      published={post.published}
+                    />
+                  </li>
+                ))}
             </ul>
           </div>
 
